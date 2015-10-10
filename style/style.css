@@ -1,0 +1,187 @@
+@font-face{
+	src:url(../Font/1.ttf);
+	font-family: 'steam';
+}
+
+body{
+    position:absolute;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
+#reg{
+    font-size: 14px;
+    margin:0;
+}
+#text-container{
+        position: absolute;
+    font-family: 'steam';
+    font-size: 4em;
+    color: #000;
+    top: 10%;
+    left: 10%;
+}
+
+#steam-container{
+    position: absolute;
+    left:20%;
+    width: 650px;
+    height: 550px;
+}
+#steam-right-cover-up{
+    position: absolute;
+    width: 165px;
+    height: 24px;
+    left: -91%;
+    top: 26%;
+    background-color: #000;
+    transform: rotate(-18deg);
+}
+#steam-right-cover-up2{
+    position: absolute;
+    width: 165px;
+    height: 24px;
+    left: -88%;
+    top: 56%;
+    background-color: #000;
+    transform: rotate(18deg);
+    
+}
+
+#steam-left-wheel{
+    position:absolute;
+    width:100px;
+    height:100px;
+    top:60%;
+    left:20%;
+    background-color: black;
+    border-radius: 100px;
+    z-index: 1;
+}
+
+#steam-left-wheel-inner{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 13%;
+    left: 13%;
+    background-color: #FFF;
+    border-radius: 100px;
+    z-index: 2;
+}
+#steam-crank{
+   position: relative;
+    width: 323px;
+    height: 47px;
+    top: 67%;
+    left: 24%;
+    border-radius: 25px;
+    background-color: #000;
+    z-index: 11;
+    transform: rotate(-15deg);
+    transform-origin: left center;
+
+    animation-name: crankIt;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+
+#steam-middle-wheel{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: -45%;
+    left: 81%;
+    background-color: #000;
+    border-radius: 100px;
+}
+
+#steam-middle-wheel-inner{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 13%;
+    left: 13%;
+    background-color: #FFF;
+    border-radius: 100px;
+    z-index: 2;
+}
+
+#steam-midle-crank{
+   position: relative;
+    width: 221px;
+    height: 47px;
+    top: 49%;
+    left: 38%;
+    border-radius: 43px;
+    background-color: #000;
+    z-index: 11;
+    transform: rotate(-50deg);
+    transform-origin: left;
+    animation-name: crankIt2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+
+#steam-right-wheel{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: -79%;
+    left: 63%;
+    background-color: #000;
+    border-radius: 137px;
+    z-index: 3;
+}
+
+#steam-right-wheel-inner{
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: 26%;
+    left: 29%;
+    background-color: #000;
+    border-radius: 100px;
+}
+
+#steam-right-outer-wheel{
+   position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 16%;
+    left: 18%;
+    background-color: #FFF;
+    border-radius: 100px;
+}
+
+@keyframes crankIt{
+    0%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(-25deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+    }
+
+}
+
+@keyframes crankIt2{
+    0%{
+        transform: rotate(-50deg);
+    }
+    50%{
+        transform: rotate(-75deg);
+    }
+    100%{
+        transform: rotate(-50deg);
+    }
+
+}
+
+
